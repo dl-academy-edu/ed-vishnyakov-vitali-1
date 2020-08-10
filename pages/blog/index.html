@@ -4,155 +4,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <link rel="stylesheet" href="/pages/blog/style.css">
   <link rel="stylesheet" href="/commone.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
   <title>DLK-Blog</title>
 </head>
 
 <body>
   <header class="header">
-    <a href="/index.html">
-      <img class="header-logo" src="/images/logo.svg" alt="logo">
-    </a>
-    <nav class="header-nav">
-      <ul class="header-list">
-        <li><a class="header-list-item" href="/pages/blog/index.html">blog</a></li>
-        <li><a class="header-list-item" href="/pages/catalog/index.html">catalog</a></li>
-        <li><a class="header-list-item" href="#">about us</a></li>
-      </ul>
-    </nav>
-    <ul class="header-list">
-      <li>
-        <div class="search">
-          <form>
-            <input type="text" placeholder="search">
-            <button type="submit"></button>
-          </form>
-        </div>
-      </li>
-      <li><a class="contact" href="/pages/contact-us/index.html">contact us</a></li>
-    </ul>
+    <div class="container">
+      <div class="header-wrapper">
+        <a class="header-logo-link" href="/index.html"><img class="header-logo" src="/images/logo.svg" alt="logo"></a>
+        <nav class="header-nav">
+          <ul class="header-list header-list-left">
+            <li class="header-list-item"><a class="header-list-item-link" href="/pages/blog/index.html">blog</a></li>
+            <li class="header-list-item"><a class="header-list-item-link" href="/pages/catalog/index.html">catalog</a>
+            </li>
+            <li class="header-list-item"><a class="header-list-item-link" href="#">about us</a></li>
+          </ul>
+          <ul class="header-list header-list-right">
+            <li class="header-list-item header-search header-list-item-link"> <a href="#"></a><img
+                src="/images/search.png" alt="search"></li>
+            <li class="header-list-item header-contactus"><a class="header-list-item-link"
+                href="/pages/contact-us/index.html"><span class="header-text-contactus">contact us</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
+
   <main>
-    <h1 class="blog-tittle">blog</h1>
-    <ul class="breadcrumbs">
-      <li><a href="/index.html">home</a></li>
-      <li class="breadcrumbs-current"><span>blog</span></li>
-    </ul>
-    <section class="blog-blocks">
-      <ul class="blocks-list">
-        <li class="blocks-item">
-          <img src="/images/top_5_fastest_1.jpg" alt="top_5_fastest_1.jpg">
-          <p class="blocks-date">23rd August 2018</p>
-          <h3 class="blocks-tittle">top 5 fastest growing it service companies in philly</h3>
-          <p class="blocks-text">direct Line Development’s Team is excited to announce that we received UpCity’s 2019
-            Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in
-            the given marketplace.</p>
+    <div class="container">
+      <h1 class="tittle">blog</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="/index.html">Home</a>
         </li>
-        <li class="blocks-item">
-          <img src="/images/best_financial_1.jpg" alt="best_financial_1.jpg">
-          <p class="blocks-date">23rd August 2018</p>
-          <h3 class="blocks-tittle">best financial</h3>
-          <p class="blocks-text">direct Line Development is honored to be recognized as one of the Top 100 Fastest
-            Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-        </li>
-        <li class="blocks-item">
-          <img src="/images/company_logo_1.jpg" alt="company_logo_1.jpg">
-          <p class="blocks-date">23rd August 2018</p>
-          <h3 class="blocks-tittle">company logo or brand identity: which one is more important? brand identity</h3>
-          <p class="blocks-text">to survive in the world of digital marketing, you need to keep up with the latest SEO
-            trends. Here are our simple, but effective, SEO tips for small business success.</p>
-        </li>
-        <li class="blocks-item">
-          <img src="/images/best_financial_2.jpg" alt="top_5_fastest_1.jpg">
-          <p class="blocks-date">23rd August 2018</p>
-          <h3 class="blocks-tittle">best financial</h3>
-          <p class="blocks-text">direct Line Development is honored to be recognized as one of the Top 100 Fastest
-            Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-        </li>
-        <li class="blocks-item">
-          <img src="/images/company_logo_2.jpg" alt="company_logo_2.jpg">
-          <p class="blocks-date">23rd August 2018</p>
-          <h3 class="blocks-tittle">company logo or brand identity: which one is more important? brand identity</h3>
-          <p class="blocks-text">to survive in the world of digital marketing, you need to keep up with the latest SEO
-            trends. Here are our simple, but effective, SEO tips for small business success.</p>
-        </li>
-        <li class="blocks-item">
-          <img src="/images/top_5_fastest_2.jpg" alt="top_5_fastest_2.jpg">
-          <p class="blocks-date">23rd August 2018</p>
-          <h3 class="blocks-tittle">top 5 fastest growing it service companies in philly</h3>
-          <p class="blocks-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019
-            Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in
-            the given marketplace.</p>
+        <li class="breadcrumbs-item">
+          <span class="breadcrumbs-link breadcrumbs-active">Blog</span>
         </li>
       </ul>
-      <div class="blocks-page">
-        <a href="#" class="previous">&#8249;</a>
-        <a href="#" class="page">1</a>
-        <a href="#" class="page">2</a>
-        <a href="#" class="page">3</a>
-        <a href="#" class="page">4</a>
-        <a href="#" class="next">&#8250;</a>
-      </div>
-    </section>
+      <section class="blog-article">
+        <ul class="article-list">
+          <li class="article-item">
+            <img class="article-img" src="/images/top_5_fastest_1.jpg" alt="top_5_fastest_1.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Top 5 fastest growing it service companies in philly</h3>
+            <p class="article-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019
+              Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in
+              the given marketplace.</p>
+          </li>
+          <li class="article-item">
+            <img class="article-img" src="/images/best_financial_1.jpg" alt="best_financial_1.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Best financial</h3>
+            <p class="article-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest
+              Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+          </li>
+          <li class="article-item">
+            <img class="article-img" src="/images/company_logo_1.jpg" alt="company_logo_1.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Company logo or brand identity: which one is more important? brand identity</h3>
+            <p class="article-text">To survive in the world of digital marketing, you need to keep up with the latest
+              SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+          </li>
+          <li class="article-item">
+            <img class="article-img" src="/images/best_financial_2.jpg" alt="top_5_fastest_1.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Best financial</h3>
+            <p class="article-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest
+              Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+          </li>
+          <li class="article-item">
+            <img class="article-img" src="/images/company_logo_2.jpg" alt="company_logo_2.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Company logo or brand identity: which one is more important? brand identity</h3>
+            <p class="article-text">To survive in the world of digital marketing, you need to keep up with the latest
+              SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+          </li>
+          <li class="article-item">
+            <img class="article-img" src="/images/top_5_fastest_2.jpg" alt="top_5_fastest_2.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Top 5 fastest growing it service companies in philly</h3>
+            <p class="article-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019
+              Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in
+              the given marketplace.</p>
+          </li>
+        </ul>
+        <div class="pages">
+          <a class="prev" href="#"></a>
+          <a class="page" href="#"><span class="page-nomber">1</span></a>
+          <a class="page" href="#"><span class="page-nomber">2</span></a>
+          <a class="page" href="#"><span class="page-nomber">3</span></a>
+          <a class="page" href="#"><span class="page-nomber">4</span></a>
+          <a class="next" href="#"></a>
+        </div>
+      </section>
+    </div>
   </main>
+
   <footer class="footer">
-    <section class="footer-nav">
-      <h4 class="footer-nav-tittle">navigation</h4>
-      <ul class="footer-nav-list">
-        <li><a href="#">about us</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">design services</a></li>
-        <li><a href="#">featured on</a></li>
-        <li><a href="#">2018 holiday catalog</a></li>
-        <li><a href="#">shop by designer</a></li>
-      </ul>
-    </section>
-    <section class="customer">
-      <h4 class="footer-customer-tittle">customer information</h4>
-      <ul class="footer-customer-list">
-        <li><a href="#">contact us</a></li>
-        <li><a href="#">sale exclusions</a></li>
-        <li><a href="#">shipping & returns</a></li>
-        <li><a href="#">terms & conditions</a></li>
-        <li><a href="#">privacy policy</a></li>
-        <li><a href="#">search</a></li>
-      </ul>
-    </section>
-    <section class="connect">
-      <h4 class="footer-connect-tittle">connect</h4>
-      <div class="footer-connect-email">
-        <form action="index.html" class="footer-connect-form">
-          <input class="connect-email" placeholder="e-mail" type="email" name="email">
-          <button class="connect-button">join</button>
-        </form>
-      </div>
-      <ul class="connect-networks">
-        <li>
-          <a href="#"><img src="/images/soc_facebook.svg" alt="facebook"></a>
-        </li>
-        <li>
-          <a href="#"><img src="/images/soc_twitter.svg" alt="twitter"></a>
-        </li>
-        <li>
-          <a href="#"><img src="/images/soc_pinterest.svg" alt="pinterest"></a>
-        </li>
-        <li>
-          <a href="#"><img src="/images/soc_instagram.svg" alt="instagram"></a>
-        </li>
-      </ul>
-    </section>
-    <div class="info">
-      <ul class="info-list">
-        <li class="info-list-companyRating">company rating
-          <div class="stars"></div>
-        </li>
-        <li class="info-list-copyright">
-          copyright © 2018 dlk • design life kids
-        </li>
-        <li class="info-list-webdesign">
-          web design — direct line development
-        </li>
-      </ul>
+    <div class="container">
+      <section class="footer-contanier">
+        <div class="footer-nav">
+          <h4 class="footer-nav-tittle footer-tittle">navigation</h4>
+          <hr class="nav-line-short">
+          <ul class="footer-nav-list">
+            <li class="nav-list-item"><a class="nav-link" href=#>about us</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>blog</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>design services</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>featured on</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>2018 holiday catalog</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>shop by designer</a></li>
+          </ul>
+        </div>
+        <div class="footer-customer">
+          <h4 class="footer-customer-tittle footer-tittle">customer information</h4>
+          <hr class="nav-line-short">
+          <ul class="footer-customer-list">
+            <li class="nav-list-item"><a class="nav-link" href=#>contact us</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>sale exclusions</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>shipping & returns</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>terms & conditions</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>privacy policy</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>search</a></li>
+          </ul>
+        </div>
+        <div class="footer-connect">
+          <h4 class="footer-connect-tittle footer-tittle">connect</h4>
+          <hr class="nav-line-short">
+          <div class="footer-connect-email">
+            <form action="index.html" class="footer-connect-form">
+              <input class="connect-email" placeholder="Email" type="email" name="email">
+              <button class="button">join</button>
+            </form>
+          </div>
+          <ul class="connect-networks">
+            <li class="networks-circle">
+              <a class="social-link social-facebook" href="#"></a>
+            </li>
+            <li class="networks-circle">
+              <a class="social-link social-twitter" href="#"></a>
+            </li>
+            <li class="networks-circle">
+              <a class="social-link social-pinterest" href="#"></a>
+            </li>
+            <li class="networks-circle">
+              <a class="social-link social-instagram" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="nav-line-long">
+        <div class="footer-info">
+          <div class="info-list">
+            <div class="info-list-company">
+              <span class="company_rating">company rating</span>
+              <div class="stars-wrapper">
+                <div class="rating-area">
+                  <input type="radio" id="star-5" name="star" value="5">
+                  <label for="star-5" title="«5»"></label>
+                  <input type="radio" id="star-4" name="star" value="4">
+                  <label for="star-4" title="«4»"></label>
+                  <input type="radio" id="star-3" name="star" value="3">
+                  <label for="star-3" title="«3»"></label>
+                  <input type="radio" id="star-2" name="star" value="2">
+                  <label for="star-2" title="«2»"></label>
+                  <input type="radio" id="star-1" name="star" value="1">
+                  <label for="star-1" title="«1»"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-list-copyright">
+            copyright © 2018 dlk • design life kids
+          </div>
+          <div class="info-list-webdesign">
+            web design — direct line development
+          </div>
+        </div>
+      </section>
     </div>
   </footer>
 </body>

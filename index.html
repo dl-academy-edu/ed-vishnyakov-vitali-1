@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="commone.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap"
     rel="stylesheet">
   <title>DLK</title>
 </head>
@@ -16,7 +17,7 @@
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
-        <a href="index.html"><img class="header-logo" src="images/logo.svg" alt="logo"></a>
+        <a class="header-logo-link" href="index.html"><img class="header-logo" src="images/logo.svg" alt="logo"></a>
         <nav class="header-nav">
           <ul class="header-list header-list-left">
             <li class="header-list-item"><a class="header-list-item-link" href="pages/blog/index.html">blog</a></li>
@@ -28,13 +29,13 @@
             <li class="header-list-item header-search header-list-item-link"> <a href="#"></a><img
                 src="images/search.png" alt="search"></li>
             <li class="header-list-item header-contactus"><a class="header-list-item-link"
-                href="pages/contact-us/index.html">contact us</a></li>
+                href="pages/contact-us/index.html"><span class="header-text-contactus">contact us</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
-
     </div>
-
   </header>
 
   <main>
@@ -56,7 +57,7 @@
               <div class="slider__tittle-text-link">
                 <h2 class="slide-title">the ooh noo collection</h2>
                 <p class="slide-text">Designed in Slovenia</p>
-                <div class="slide-link"><a class="slide-link-text" href="#">explore now</a></div>
+                <a class="link button-open_js" href="#">explore now</a>
               </div>
               <div class="slide-bottom-info">
                 <p class="slide-bottom-text"> free (continental) USA shipping on all orders of $100 USD or more!</p>
@@ -66,101 +67,87 @@
         </ul>
       </div>
     </section>
-
     <section class="category-container">
       <div class="container">
         <h2 class="category-tittle">category products</h2>
         <ul class="category-list">
-          <li class="category-list-item">
-            <div>
-              <a class="category-link" href="#">
-                <img class="category-image" src="images/apparel_kids.png" alt="apparel_kids.png">
-              </a>
-            </div>
-            <h3 class="card-tittle">apparel kids</h3>
+          <li class="category-item">
+            <a class="category-link" href="#">
+              <h3 class="card-tittle">apparel kids</h3>
+              <img class="category-image" src="images/apparel_kids.png" alt="apparel_kids.png">
+            </a>
           </li>
-          <li class="category-list-item">
-            <div>
-              <a class="category-link" href="#">
-                <img class="category-image" src="images/holiday_shop.png" alt="holiday_shop.png">
-              </a>
-            </div>
-            <h3 class="card-tittle">holiday shop</h3>
+          <li class="category-item">
+            <a class="category-link" href="#">
+              <h3 class="card-tittle">holiday shop</h3>
+              <img class="category-image" src="images/holiday_shop.png" alt="holiday_shop.png">
+            </a>
           </li>
-          <li class="category-list-item">
-            <div>
-              <a class="category-link" href="pages/toys/index.html">
-                <img class="category-image" src="images/toys.png" alt="toys.png">
-              </a>
-            </div>
-            <h3 class="card-tittle">toys</h3>
+          <li class="category-item">
+            <a class="category-link" href="pages/toys/index.html">
+              <h3 class="card-tittle">toys</h3>
+              <img class="category-image" src="images/toys.png" alt="toys.png">
+            </a>
           </li>
-          <li class="category-list-item category-list-accessories">
-            <div>
-              <a class="category-link" href="#">
-                <img class="category-image" src="images/accessories.png" alt="accessories.png">
-              </a>
-            </div>
-            <h3 class="card-tittle">accessories</h3>
+          <li class="category-item category-list-accessories">
+            <a class="category-link" href="#">
+              <h3 class="card-tittle">accessories</h3>
+              <img class="category-image" src="images/accessories.png" alt="accessories.png">
+            </a>
           </li>
         </ul>
         <div class="category-button-text">
           <div class="category-button">
-            <button class="previous"><img class="image-previous" src="images/prev.svg" alt="previous"></button>
-            <button class="next"><img class="image-previous" src="images/next.svg" alt="previous"></button>
+            <button class="category-previous"><img class="image-previous" src="images/prev.svg" alt="previous"></button>
+            <button class="category-next"><img class="image-previous" src="images/next.svg" alt="previous"></button>
           </div>
           <p class="category-card-text">
             Modern finds for the modern home. Curated goods by unique designers
             around the world from fashion to furniture for kids and adults.
           </p>
         </div>
-
       </div>
     </section>
-
     <section class="service-container">
       <div class="container">
         <div class="service-wrapper">
-          <div class="service-container-block">
-            <div class="contanier-delivery-image">
-              <img class="service-image" src="images/service_delivery.png" alt="delivery.png">
+          <div class="contanier-delivery-image">
+            <img class="service-image" src="images/service_delivery.png" alt="delivery.png">
+          </div>
+          <div class="contanier-delivery-description">
+            <h3 class="service-tittle">delivery</h3>
+            <ul class="service-list">
+              <li class="service-item service-item-active">
+                <a class="service-item-link" href="#">Delivery</a>
+              </li>
+              <li class="service-item">
+                <a class="service-item-link" href="#">Guarantee</a>
+              </li>
+              <li class="service-item">
+                <a class="service-item-link" href="#">Credit</a>
+              </li>
+            </ul>
+            <div class="delivery-paragraph">
+              <p class="paragraph1">
+                Some days i feel like i've been working on dlk my entire life
+                and there are other days that i am completely shocked that four
+                years have flown by. It's simply magical.
+              </p>
+              <p class="paragraph2">
+                What started as an outlet to deal with the traumatic loss of my
+                husband, dlk has now become a truly happy place for me and i
+                have you and all of the beautiful designers that we work with
+                to thank!
+              </p>
             </div>
-            <div class="contanier-delivery-description">
-              <h2 class="service-tittle">delivery</h2>
-              <ul class="service-list">
-                <li class="service-item service-item-active">
-                  <a class="service-item-link" href="#">Delivery</a>
-                </li>
-                <li class="service-item">
-                  <a class="service-item-link" href="#">Guarantee</a>
-                </li>
-                <li class="service-item">
-                  <a class="service-item-link" href="#">Credit</a>
-                </li>
-              </ul>
-              <div class="delivery-paragraph">
-                <p class="paragraph1">
-                  Some days i feel like i've been working on dlk my entire life
-                  and there are other days that i am completely shocked that four
-                  years have flown by. It's simply magical.
-                </p>
-                <p class="paragraph2">
-                  What started as an outlet to deal with the traumatic loss of my
-                  husband, dlk has now become a truly happy place for me and i
-                  have you and all of the beautiful designers that we work with
-                  to thank!
-                </p>
-              </div>
-              <div class="service-link"><a class="service-link-text" href="#">learn more</a></div>
-            </div>
+            <div class="service-link"><a class="link" href="#">learn more</a></div>
           </div>
         </div>
       </div>
     </section>
-
     <section class="partners-container">
       <div class="container">
-        <h2 class="hidden">partners</h2>
+        <h2 class="visually-hidden">partners</h2>
         <ul class="partners-list">
           <li class="partners-list-item">
             <a href="#"><img src="images/mail.ru.png" alt="mail.ru.png"></a>
@@ -177,32 +164,33 @@
         </ul>
       </div>
     </section>
-
     <section class="design-contacts">
       <div class="container">
         <div class="design-contacts-wrapper">
-          <div class="design-container">
-            <h2 class="design-title">design life kids</h2>
-            <div class="design-wrapper">
+          <div class="design-wrapper">
+            <div class="design-text">
+              <h2 class="design-title">design life kids</h2>
               <h3 class="design-aboutus-tittle">About Us</h3>
-              <p class="design-text">
+              <p class="design-paragraph">
                 Some days i feel like i've been working on dlk my entire life and
                 there are other days that i am completely shocked that four years have
                 flown by. It's simply magical.
               </p>
-              <div class="design-link"><a class="design-link-text" href="#">buy now</a></div>
+              <a class="link" href="#">buy now</a>
             </div>
+            <div class="design-bg"></div>
           </div>
-          <div class="contacts-container">
-            <h2 class="contacts-tittle">contacts</h2>
-            <div class="contacts-wrapper">
-              <p class="contacts-text">
+          <div class="contacts-wrapper">
+            <div class="contacts-text-map">
+              <h2 class="contacts-tittle">contacts</h2>
+              <p class="contacts-paragraph">
                 Some days i feel like i've been working on dlk my entire life and
                 there are other days that i am completely shocked that four years have
                 flown by. It's simply magical.
               </p>
-              <div class="contacts-map"><img class="map" src="images/map.jpg" alt="map"></div>
+              <img class="map" src="images/map.jpg" alt="map">
             </div>
+            <div class="contacts-bg"></div>
           </div>
         </div>
       </div>
@@ -210,9 +198,9 @@
   </main>
 
   <footer class="footer">
-    <section class="footer-contanier">
-      <div class="container">
-        <section class="footer-nav">
+    <div class="container">
+      <section class="footer-contanier">
+        <div class="footer-nav">
           <h4 class="footer-nav-tittle footer-tittle">navigation</h4>
           <hr class="nav-line-short">
           <ul class="footer-nav-list">
@@ -223,8 +211,8 @@
             <li class="nav-list-item"><a class="nav-link" href=#>2018 holiday catalog</a></li>
             <li class="nav-list-item"><a class="nav-link" href=#>shop by designer</a></li>
           </ul>
-        </section>
-        <section class="footer-customer">
+        </div>
+        <div class="footer-customer">
           <h4 class="footer-customer-tittle footer-tittle">customer information</h4>
           <hr class="nav-line-short">
           <ul class="footer-customer-list">
@@ -235,16 +223,14 @@
             <li class="nav-list-item"><a class="nav-link" href=#>privacy policy</a></li>
             <li class="nav-list-item"><a class="nav-link" href=#>search</a></li>
           </ul>
-        </section>
-        <section class="footer-connect">
+        </div>
+        <div class="footer-connect">
           <h4 class="footer-connect-tittle footer-tittle">connect</h4>
-          <!-- <li class="nav-line"> -->
           <hr class="nav-line-short">
-          <!-- </li> -->
           <div class="footer-connect-email">
             <form action="index.html" class="footer-connect-form">
               <input class="connect-email" placeholder="Email" type="email" name="email">
-              <button class="connect-button">join</button>
+              <button class="button">join</button>
             </form>
           </div>
           <ul class="connect-networks">
@@ -261,55 +247,73 @@
               <a class="social-link social-instagram" href="#"></a>
             </li>
           </ul>
-        </section>
+        </div>
         <hr class="nav-line-long">
-        <section class="footer-info">
-          <section class="info-list">
-            <div class="info-list-company">company rating
-              <ul class="stars">
-                <li class="stars-company"><img src="images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="images/Star.svg" alt="star"></li>
-              </ul>
+        <div class="footer-info">
+          <div class="info-list">
+            <div class="info-list-company">
+              <span class="company_rating">company rating</span>
+              <div class="stars-wrapper">
+                <div class="rating-area">
+                  <input type="radio" id="star-5" name="star" value="5">
+                  <label for="star-5" title="«5»"></label>
+                  <input type="radio" id="star-4" name="star" value="4">
+                  <label for="star-4" title="«4»"></label>
+                  <input type="radio" id="star-3" name="star" value="3">
+                  <label for="star-3" title="«3»"></label>
+                  <input type="radio" id="star-2" name="star" value="2">
+                  <label for="star-2" title="«2»"></label>
+                  <input type="radio" id="star-1" name="star" value="1">
+                  <label for="star-1" title="«1»"></label>
+                </div>
+              </div>
             </div>
-          </section>
-          <section class="info-list-copyright">
+          </div>
+          <div class="info-list-copyright">
             copyright © 2018 dlk • design life kids
-          </section>
-          <section class="info-list-webdesign">
+          </div>
+          <div class="info-list-webdesign">
             web design — direct line development
-          </section>
-        </section>
-      </div>
-    </section>
-  </footer>
-  <!-- <form class="contakt-us-form" action="/index.html"
-    <label class="form-label">
-      name
-      <input class="input-text" type="text" name="name">
-    </label>
-    <label class="form-label">
-      phone
-      <input class="input-text" type="tel" name="phone">
-    </label>
-    <label class="form-label">
-      email
-      <input class="input-text" type="email" name="email">
-    </label>
-    <label class="form-label">
-      message
-      <textarea name="message" cols="30" rows="10"></textarea>
-    </label>
-    <div class="subscribe">
-      <input type="checkbox" name="subscribe" value="personal data">
-      <label class="form-label">by clicking on the button, you consent to the processing of your personal data
-      </label>
+          </div>
+        </div>
+      </section>
     </div>
-    <button class="form-button" type="submit">submit</button>
-    <button class="form-button-exit" type="button">exit</button>
-  </form> -->
+  </footer>
+  <div class="modal-bg modal_js">
+    <form class="form-wrapper" action="/index.html">
+      <label class="form-lable">
+        <input class="input-text input-name input-text_js" type="text" name="name">
+        <span class="input-lable-text">Name</span>
+      </label>
+      <div class="form-phone-email">
+        <div class="form-cell-50 input-phone">
+          <label class="form-lable">
+            <input class="input-text" type="tel" name="phone">
+            <span class="input-lable-text">Phone</span>
+          </label>
+        </div>
+        <div class="form-cell-50 input-email">
+          <label class="form-lable">
+            <input class="input-text" type="email" name="email">
+            <span class="input-lable-text">Email</span>
+          </label>
+        </div>
+      </div>
+      <label class="form-lable">
+        <textarea class="form-message" name="message" cols="30" rows="10"></textarea>
+        <span class="input-lable-text">Message</span>
+      </label>
+      <label class="form-subscribe">
+        <input class="subscribe-checkbox" type="checkbox" name="subscribe" value="personal data">
+        <span class="subscribe-fake"></span>
+        <span class="subscribe-text">By clicking on the button, you consent to the processing of your personal
+          data</span>
+      </label>
+      <button class="form-button button" type="submit">submit</button>
+      <button class="button-close button-close_js" type="button" aria-label="exit"></button>
+    </form>
+  </div>
+  <script src="/main.js"></script>
 </body>
 
 </html>
